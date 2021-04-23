@@ -90,7 +90,6 @@
      <string>Help</string>
     </property>
     <addaction name="actionhelp"/>
-    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menuhelp"/>
@@ -140,15 +139,6 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+W</string>
-   </property>
-  </action>
-  <action name="actionAbout">
-   <property name="icon">
-    <iconset resource="res.qrc">
-     <normaloff>:/images/about.svg</normaloff>:/images/about.svg</iconset>
-   </property>
-   <property name="text">
-    <string>About</string>
    </property>
   </action>
   <action name="actionhelp">

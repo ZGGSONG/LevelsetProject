@@ -3,7 +3,6 @@
         <file>save.svg</file>
         <file>open.svg</file>
         <file>close.svg</file>
-        <file>about.svg</file>
         <file>help.svg</file>
     </qresource>
 </RCC>
