@@ -108,6 +108,9 @@
    <property name="shortcut">
     <string>Ctrl+O</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionSave">
    <property name="icon">
@@ -129,6 +132,15 @@
     <string>Ctrl+Shift+S</string>
    </property>
   </action>
+  <action name="actionhelp">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/help.svg</normaloff>:/images/help.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
   <action name="actionClose">
    <property name="icon">
     <iconset resource="res.qrc">
@@ -141,18 +153,26 @@
     <string>Ctrl+W</string>
    </property>
   </action>
-  <action name="actionhelp">
-   <property name="icon">
-    <iconset resource="res.qrc">
-     <normaloff>:/images/help.svg</normaloff>:/images/help.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Help</string>
-   </property>
-  </action>
  </widget>
  <resources>
   <include location="res.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionClose</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

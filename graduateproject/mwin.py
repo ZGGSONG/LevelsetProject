@@ -54,6 +54,7 @@ class Ui_MainWindow(object):
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/images/open.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionOpen.setIcon(icon)
+        self.actionOpen.setIconVisibleInMenu(True)
         self.actionOpen.setObjectName("actionOpen")
         self.actionSave = QtWidgets.QAction(MainWindow)
         icon1 = QtGui.QIcon()
@@ -66,6 +67,7 @@ class Ui_MainWindow(object):
         icon2 = QtGui.QIcon()
         icon2.addPixmap(QtGui.QPixmap(":/images/close.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionClose.setIcon(icon2)
+        self.actionClose.setShortcutVisibleInContextMenu(False)
         self.actionClose.setObjectName("actionClose")
         self.actionhelp = QtWidgets.QAction(MainWindow)
         icon3 = QtGui.QIcon()
@@ -84,6 +86,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
+        self.actionClose.triggered.connect(MainWindow.close)
+        self.actionOpen.triggered.connect(self.actionOpen.trigger)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
