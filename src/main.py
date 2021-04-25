@@ -2,8 +2,6 @@ import os
 import sys
 
 from PyQt5.QtCore import pyqtSlot
-
-from graduateproject import mwin
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
 from PyQt5.QtGui import QIcon
 
@@ -28,6 +26,7 @@ class MWim(QMainWindow, Ui_MainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon('../graduateproject/logo.png'))
     w = MWim()
     w.show()
     sys.exit(app.exec_())
