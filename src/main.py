@@ -16,11 +16,11 @@ class MWim(QMainWindow, Ui_MainWindow):
 
     @pyqtSlot()
     def on_img_tbtn_clicked(self):
-        file = QFileDialog.getOpenFileName(self, '选择一张图', '', 'images(*.png; *.jpg; *.bmp);;*')
+        file = QFileDialog.getOpenFileName(self, '选择一张图', '', 'images(*.png; *.jpg; *.jpeg; *.bmp);;*')
         if file[0]:
             self.bn_image = file[0]
         else:
-            self.bn_image = 'default.bmp'
+            self.bn_image = './img/default.bmp'
         self.img_text.setText(f'{os.path.basename(self.bn_image)}')
 
 
