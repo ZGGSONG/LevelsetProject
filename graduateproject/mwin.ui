@@ -107,8 +107,19 @@
      </item>
      <item row="2" column="1">
       <widget class="QTabWidget" name="tabWidget">
+       <property name="font">
+        <font>
+         <family>Heiti SC</family>
+         <pointsize>18</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
        <property name="currentIndex">
-        <number>2</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="ChanVese">
         <attribute name="title">
@@ -136,10 +147,12 @@
              <font>
               <family>STKaiti</family>
               <pointsize>14</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
              </font>
             </property>
             <property name="frameShape">
-             <enum>QFrame::WinPanel</enum>
+             <enum>QFrame::Box</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Sunken</enum>
@@ -152,13 +165,6 @@
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="Line" name="line">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
@@ -312,6 +318,27 @@
           <enum>Qt::Horizontal</enum>
          </property>
         </widget>
+        <widget class="QPushButton" name="btn_cv">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>70</y>
+           <width>121</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>STHeiti</family>
+           <pointsize>18</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>点击运行CV</string>
+         </property>
+        </widget>
        </widget>
        <widget class="QWidget" name="RSF">
         <attribute name="title">
@@ -339,10 +366,12 @@
              <font>
               <family>STKaiti</family>
               <pointsize>14</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
              </font>
             </property>
             <property name="frameShape">
-             <enum>QFrame::WinPanel</enum>
+             <enum>QFrame::Box</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Sunken</enum>
@@ -355,13 +384,6 @@
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="Line" name="line_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
@@ -542,10 +564,12 @@
              <font>
               <family>STKaiti</family>
               <pointsize>14</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
              </font>
             </property>
             <property name="frameShape">
-             <enum>QFrame::WinPanel</enum>
+             <enum>QFrame::Box</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Sunken</enum>
@@ -558,13 +582,6 @@
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="Line" name="line_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
@@ -815,6 +832,7 @@
  </widget>
  <resources>
   <include location="res.qrc"/>
+  <include location="../../../.designer/backup/res.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -830,6 +848,22 @@
     <hint type="destinationlabel">
      <x>435</x>
      <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cv</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>620</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>418</x>
+     <y>29</y>
     </hint>
    </hints>
   </connection>

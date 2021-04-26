@@ -2,9 +2,14 @@
 
 import cv2
 from pylab import *
+from main import MWim
+
+mw = MWim()
+addr = mw.on_img_tbtn_clicked()
 
 # 读入原图
-Image = cv2.imread('img/default.bmp', 1)
+# Image = cv2.imread('img/default.bmp', 1)
+Image = cv2.imread(addr, 1)
 image = cv2.cvtColor(Image, cv2.COLOR_BGR2GRAY)
 # 读入到np的array中，并转化浮点类型
 img = np.array(image, dtype=np.float64)
