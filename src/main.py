@@ -22,6 +22,7 @@ class MWim(QMainWindow, Ui_MainWindow):
         else:
             self.bn_image = './img/default.bmp'
         self.img_text.setText(f'{os.path.basename(self.bn_image)}')
+        return self.bn_image
 
 
 if __name__ == '__main__':
