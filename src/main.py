@@ -5,7 +5,7 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
 from PyQt5.QtGui import QIcon
 
-from graduateproject.mwin import Ui_MainWindow
+from levelsetproject.mwin import Ui_MainWindow
 
 
 class MWim(QMainWindow, Ui_MainWindow):
@@ -27,7 +27,7 @@ class MWim(QMainWindow, Ui_MainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon('../graduateproject/logo.png'))
+    app.setWindowIcon(QIcon('../levelsetproject/logo.png'))
     w = MWim()
     w.show()
     sys.exit(app.exec_())
@@ -36,7 +36,7 @@ if __name__ == '__main__':
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv)
 #     # 设置图标
-#     app.setWindowIcon(QIcon('../graduateproject/logo.png'))
+#     app.setWindowIcon(QIcon('../levelsetproject/logo.png'))
 #
 #     MainWindow = QMainWindow()
 #

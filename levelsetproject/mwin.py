@@ -401,4 +401,4 @@ class Ui_MainWindow(object):
         self.actionhelp.setText(_translate("MainWindow", "Help"))
         self.actionClose.setText(_translate("MainWindow", "Close"))
         self.actionClose.setShortcut(_translate("MainWindow", "Ctrl+W"))
-from graduateproject import res_rc
+from levelsetproject import res_rc
