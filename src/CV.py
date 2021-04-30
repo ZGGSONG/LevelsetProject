@@ -2,14 +2,14 @@
 
 import cv2
 from pylab import *
-from main import MWim
-
-mw = MWim()
-addr = mw.on_img_tbtn_clicked()
+# from main import MWim
+#
+# mw = MWim()
+# addr = mw.on_img_tbtn_clicked()
 
 # 读入原图
-# Image = cv2.imread('img/default.bmp', 1)
-Image = cv2.imread(addr, 1)
+Image = cv2.imread('img/default.bmp', 1)
+# Image = cv2.imread(addr, 1)
 image = cv2.cvtColor(Image, cv2.COLOR_BGR2GRAY)
 # 读入到np的array中，并转化浮点类型
 img = np.array(image, dtype=np.float64)
@@ -67,19 +67,22 @@ def CV(LSF, img, mu, nu, epison, step):
     return LSF
 
 
-# 模型参数
-mu = 1
-nu = 0.003 * 255 * 255
-num = 20
-epison = 1
-step = 0.1
-LSF = IniLSF
-for i in range(1, num):
-    LSF = CV(LSF, img, mu, nu, epison, step)  # 迭代
-    if i % 1 == 0:  # 显示分割轮廓
-        plt.imshow(Image), plt.xticks([]), plt.yticks([])
-        plt.contour(LSF, [0], colors='r', linewidth=2)
-        plt.draw(), plt.show(block=False), plt.pause(0.01)
+def __init__():
+    # 模型参数
+    mu = 1
+    nu = 0.003 * 255 * 255
+    num = 20
+    epison = 1
+    step = 0.1
+    LSF = IniLSF
+    for i in range(1, num):
+        LSF = CV(LSF, img, mu, nu, epison, step)  # 迭代
+        if i % 1 == 0:  # 显示分割轮廓
+            plt.imshow(Image), plt.xticks([]), plt.yticks([])
+            plt.contour(LSF, [0], colors='r', linewidth=2)
+            plt.draw(), plt.show(block=False), plt.pause(0.01)
+
+__init__()
 
     # kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5, 5))#定义结构元素
 # closed = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)#闭运算

@@ -832,7 +832,6 @@
  </widget>
  <resources>
   <include location="res.qrc"/>
-  <include location="../../../.designer/backup/res.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -855,14 +854,14 @@
    <sender>btn_cv</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>close()</slot>
+   <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>620</x>
-     <y>188</y>
+     <x>621</x>
+     <y>197</y>
     </hint>
     <hint type="destinationlabel">
-     <x>418</x>
+     <x>415</x>
      <y>29</y>
     </hint>
    </hints>
