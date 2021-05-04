@@ -2,6 +2,7 @@
 
 import cv2
 from pylab import *
+
 # from main import MWim
 #
 # mw = MWim()
@@ -82,9 +83,10 @@ def __init__():
             plt.contour(LSF, [0], colors='r', linewidth=2)
             plt.draw(), plt.show(block=False), plt.pause(0.01)
 
+
 __init__()
 
-    # kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5, 5))#定义结构元素
+# kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5, 5))#定义结构元素
 # closed = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)#闭运算
 
 # img_=cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
