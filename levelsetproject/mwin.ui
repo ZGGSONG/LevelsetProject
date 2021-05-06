@@ -854,7 +854,7 @@
    <sender>btn_cv</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>show()</slot>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>621</x>

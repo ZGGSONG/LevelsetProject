@@ -355,7 +355,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
         self.actionClose.triggered.connect(MainWindow.close)
-        self.btn_cv.clicked.connect(MainWindow.show)
+        self.btn_cv.clicked.connect(MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
