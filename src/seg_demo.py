@@ -2,7 +2,7 @@ import imageio as imageio
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import convolve2d as conv2d
-from src.lsca.drlse import gauss2D, drlse_edge
+from src.drlse import gauss2D, drlse_edge
 
 img = imageio.imread('./img/gray_r_01.bmp')
 # If the image is not gray scale

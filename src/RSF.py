@@ -55,7 +55,7 @@ def RSF(LSF, img, mu, nu, epison, step, lambda1, lambda2, kernel):
     return LSF;
 
 
-Image = cv2.imread('../img/default.bmp', 1);
+Image = cv2.imread('img/default.bmp', 1);
 image = cv2.cvtColor(Image, cv2.COLOR_BGR2GRAY)
 img = np.float64(image)
 
