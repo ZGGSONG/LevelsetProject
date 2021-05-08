@@ -5,9 +5,9 @@ from scipy.signal import convolve2d as conv2d
 from src.lsca.drlse import gauss2D, drlse_edge
 
 class LsDRLSE:
-    def __init__(self, img_path):
-        # img = imageio.imread('./img/gray_r_01.bmp')
-        img = imageio.imread(img_path)
+    def __init__(self):
+        img = imageio.imread('./img/gray_r_01.bmp')
+        # img = imageio.imread(img_path)
         # If the image is not gray scale
         # img = img[:,:,0]
 
@@ -72,11 +72,11 @@ class LsDRLSE:
         # ax.plot_surface(x,y,-finalLSF[x,y],cmap=cm.Accent,linewidth=0.0, antialiased=True)
         # print(phi[:,22])
 
-        fig, (ax1) = plt.subplots(nrows=1, figsize=(3, 5))
+        fig, (ax1) = plt.subplots(nrows=1, figsize=(5, 5))
         ax1.imshow(img, cmap='gray', aspect='auto', interpolation='nearest')
         ax1.contour(y, x, finalLSF[x, y], 0, colors='r', linewidths=4)
         plt.show()
 
 
-if __name__ == '__main__':
-    LsDRLSE().__init__()
+# if __name__ == '__main__':
+#     LsDRLSE().__init__()

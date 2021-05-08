@@ -13,19 +13,19 @@ class MWim(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MWim, self).__init__()
         self.setupUi(self)
-        self.bn_image = ''
+        # self.img_path = ''
 
-    @pyqtSlot()
-    def on_img_tbtn_clicked(self):
-        imgName, imgType = QFileDialog.getOpenFileName(self, '选择一张图', '', 'images(*.png; *.jpg; *.jpeg; *.bmp);;*')
-        if imgType[0]:
-            self.bn_image = imgType[0]
-        else:
-            self.bn_image = './img/default.bmp'
-        self.img_text.setText(f'{os.path.basename(self.bn_image)}')
-        img = QtGui.QPixmap(imgName).scaled(self.label.width(), self.label.height())
-        self.img_lab.setPixmap(img)
-        return self.bn_image
+    # @pyqtSlot()
+    # def on_img_tbtn_clicked(self):
+    #     imgType = QFileDialog.getOpenFileName(self, '选择一张图', '', 'images(*.png; *.jpg; *.jpeg; *.bmp);;*')
+    #     if imgType[0]:
+    #         self.img_path = imgType[0]
+    #     else:
+    #         self.img_path = './img/default.bmp'
+    #     self.img_text.setText(f'{os.path.basename(self.img_path)}')
+    #     img = QtGui.QPixmap(imgType).scaled(self.img_lab.width(), self.img_lab.height())
+    #     self.img_lab.setPixmap(img)
+    #     return self.img_path
 
 
 if __name__ == '__main__':
