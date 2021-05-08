@@ -237,8 +237,8 @@
      <widget class="QPushButton" name="btn_cv">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>70</y>
+        <x>430</x>
+        <y>280</y>
         <width>121</width>
         <height>41</height>
        </rect>
@@ -254,6 +254,57 @@
       <property name="text">
        <string>点击运行CV</string>
       </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>70</y>
+        <width>171</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_23">
+         <property name="font">
+          <font>
+           <family>STKaiti</family>
+           <pointsize>14</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>相关参数调整</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="RSF">
@@ -682,7 +733,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>21</x>

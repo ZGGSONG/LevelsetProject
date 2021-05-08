@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from src.LsCV import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_7.setObjectName("line_7")
         self.btn_cv = QtWidgets.QPushButton(self.ChanVese)
-        self.btn_cv.setGeometry(QtCore.QRect(320, 70, 121, 41))
+        self.btn_cv.setGeometry(QtCore.QRect(430, 280, 121, 41))
         font = QtGui.QFont()
         font.setFamily("STHeiti")
         font.setPointSize(18)
@@ -113,6 +113,37 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         self.btn_cv.setFont(font)
         self.btn_cv.setObjectName("btn_cv")
+        self.widget = QtWidgets.QWidget(self.ChanVese)
+        self.widget.setGeometry(QtCore.QRect(280, 70, 171, 161))
+        self.widget.setObjectName("widget")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.label_23 = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setFamily("STKaiti")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        self.label_23.setFont(font)
+        self.label_23.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_23.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.label_23.setMidLineWidth(0)
+        self.label_23.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_23.setObjectName("label_23")
+        self.verticalLayout_4.addWidget(self.label_23)
+        self.lineEdit = QtWidgets.QLineEdit(self.widget)
+        self.lineEdit.setObjectName("lineEdit")
+        self.verticalLayout_4.addWidget(self.lineEdit)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.widget)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.verticalLayout_4.addWidget(self.lineEdit_2)
+        self.lineEdit_3 = QtWidgets.QLineEdit(self.widget)
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.verticalLayout_4.addWidget(self.lineEdit_3)
+        self.lineEdit_4 = QtWidgets.QLineEdit(self.widget)
+        self.lineEdit_4.setObjectName("lineEdit_4")
+        self.verticalLayout_4.addWidget(self.lineEdit_4)
         self.tabWidget.addTab(self.ChanVese, "")
         self.RSF = QtWidgets.QWidget()
         self.RSF.setObjectName("RSF")
@@ -283,19 +314,19 @@ class Ui_MainWindow(object):
         self.info.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.info.setAlignment(QtCore.Qt.AlignCenter)
         self.info.setObjectName("info")
-        self.widget = QtWidgets.QWidget(self.centralwidget)
-        self.widget.setGeometry(QtCore.QRect(21, 91, 211, 32))
-        self.widget.setObjectName("widget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(21, 91, 211, 32))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.img_text = QtWidgets.QLabel(self.widget)
+        self.img_text = QtWidgets.QLabel(self.layoutWidget)
         self.img_text.setMinimumSize(QtCore.QSize(30, 30))
         self.img_text.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.img_text.setAlignment(QtCore.Qt.AlignCenter)
         self.img_text.setObjectName("img_text")
         self.horizontalLayout.addWidget(self.img_text)
-        self.img_tbtn = QtWidgets.QToolButton(self.widget)
+        self.img_tbtn = QtWidgets.QToolButton(self.layoutWidget)
         self.img_tbtn.setMinimumSize(QtCore.QSize(30, 30))
         self.img_tbtn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.img_tbtn.setObjectName("img_tbtn")
@@ -353,9 +384,12 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
-        self.actionClose.triggered.connect(MainWindow.close)
+        self.actionClose.triggered.connect(self.openCv)
         self.btn_cv.clicked.connect(MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def openCv(self):
+        LsCV().__init__()
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -368,6 +402,7 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "<a href=\'https://math.berkeley.edu/~sethian/2006/Publications/Menu_Expanded_Publications.html\'>Level Set 必读刊物</a>"))
         self.label_7.setText(_translate("MainWindow", "<a href=\'https://math.berkeley.edu/~sethian/2006/Publications/Menu_Expanded_Publications.html\'>Level Set 必读刊物</a>"))
         self.btn_cv.setText(_translate("MainWindow", "点击运行CV"))
+        self.label_23.setText(_translate("MainWindow", "相关参数调整"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.ChanVese), _translate("MainWindow", "CV模型"))
         self.label_8.setText(_translate("MainWindow", "相关资料"))
         self.label_9.setText(_translate("MainWindow", "<a href=\'https://math.berkeley.edu/~sethian/2006/Publications/Menu_Expanded_Publications.html\'>Level Set 必读刊物</a>"))
