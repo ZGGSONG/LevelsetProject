@@ -78,11 +78,13 @@ def __init__():
     LSF = IniLSF
     for i in range(1, num):
         LSF = CV(LSF, img, mu, nu, epison, step)  # 迭代
-        if i % 1 == 0:  # 显示分割轮廓
-            plt.imshow(Image), plt.xticks([]), plt.yticks([])
-            plt.contour(LSF, [0], colors='r', linewidth=2)
-            plt.draw(), plt.show(block=False), plt.pause(0.01)
-
+        # if i % 1 == 0:  # 显示分割轮廓
+        #     plt.imshow(Image), plt.xticks([]), plt.yticks([])
+        #     plt.contour(LSF, [0], colors='r', linewidth=2)
+        #     plt.draw(), plt.show(block=False), plt.pause(0.01)
+    plt.imshow(Image), plt.xticks([]), plt.yticks([])
+    plt.contour(LSF, [0], colors='r', linewidth=2)
+    plt.draw(), plt.show()
 
 __init__()
 
