@@ -76,5 +76,5 @@ class LsCV:
                 plt.draw(), plt.show(block=False), plt.pause(0.01)
 
 
-if __name__ == '__main__':
-    LsCV().__init__()
+# if __name__ == '__main__':
+#     LsCV().__init__()
