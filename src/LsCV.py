@@ -1,6 +1,7 @@
 import cv2
 from pylab import *
 
+from levelsetproject.mwin import *
 
 class LsCV:
     # 1、read the original picture
@@ -46,7 +47,9 @@ class LsCV:
     def __init__(self):
         # 模型参数
         nu = 0.0001 * 255 * 255
-        mu = 1
+        # mu = 1
+        x = Ui_MainWindow().addNum()
+        mu = x[1]
         num = 10
         epison = 1
         step = 0.1
