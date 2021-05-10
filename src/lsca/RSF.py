@@ -7,10 +7,11 @@ import math
 
 
 def DrawContour(LSF, p1, p2):
-    plt.clf();
-    plt.imshow(Image), plt.xticks([]), plt.yticks([]);
-    plt.contour(LSF, [0], color=p1, linewidth=p2);
-    plt.show(block=False), plt.pause(0.01);
+    plt.clf()
+    plt.imshow(Image), plt.xticks([]), plt.yticks([])
+    plt.contour(LSF, [0], color=p1, linewidth=p2)
+    # plt.show(block=False), plt.pause(0.01)
+    plt.show()
 
 
 def mat_math(intput, str):
@@ -52,7 +53,7 @@ def RSF(LSF, img, mu, nu, epison, step, lambda1, lambda2, kernel):
 
     LSF = LSF + step * (Length + Penalty + RSFterm);
     # plt.imshow(s, cmap ='gray'),plt.show();
-    return LSF;
+    return LSF
 
 
 Image = cv2.imread('../img/default.bmp', 1);
@@ -81,5 +82,5 @@ LSF = IniLSF;
 
 for i in range(1, num):
     LSF = RSF(LSF, img, mu, nu, epison, step, lambda1, lambda2, kernel);
-    if i % 5 == 0:
-        DrawContour(LSF, 'r', 2);
+
+DrawContour(LSF, 'r', 2);
