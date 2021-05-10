@@ -672,6 +672,8 @@ class Ui_MainWindow(object):
         imgName, imgType = QFileDialog.getOpenFileName(self, "打开图片", "", "*.jpg;*.png;*.bmp;;All Files(*)")
         jpg = QtGui.QPixmap(imgName).scaled(self.img_lab.width(), self.img_lab.height())
         self.img_lab.setPixmap(jpg)
+        # 打印图片路路径
+        # print(imgName)
 
     # 运行cv
     def startCv(self):

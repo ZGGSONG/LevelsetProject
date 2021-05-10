@@ -142,4 +142,3 @@ cython_debug/
 .DS_Store
 
 /Test
-test.py
