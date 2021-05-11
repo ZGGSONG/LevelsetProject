@@ -63,5 +63,5 @@ class LsCV:
         # print("over")
 
 
-# if __name__ == '__main__':
-#     LsCV().__init__()
+if __name__ == '__main__':
+    LsCV()

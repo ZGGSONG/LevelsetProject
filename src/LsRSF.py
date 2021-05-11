@@ -83,4 +83,4 @@ class LsRSF:
 
 
 if __name__ == '__main__':
-    LsRSF().__init__()
+    LsRSF()

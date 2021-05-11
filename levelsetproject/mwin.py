@@ -776,11 +776,11 @@ class Ui_MainWindow(object):
 
     # 运行cv
     def startCv(self):
-        LsCV().__init__()
+        LsCV()
 
     # 运行drlse
     def startDrlse(self):
-        LsDRLSE().__init__()
+        LsDRLSE()
 
     def addNum(self):
         nu = self.cv_nu.text().strip()
