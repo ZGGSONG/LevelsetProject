@@ -13,6 +13,7 @@ from PyQt5.QtWidgets import QFileDialog
 
 from src.LsCV import *
 from src.LsDRLSE import *
+from src.redis_drive import redisUtils
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -783,13 +784,18 @@ class Ui_MainWindow(object):
         LsDRLSE()
 
     def addNum(self):
-        nu = self.cv_nu.text().strip()
-        mu = self.cv_mu.text().strip()
-        num = self.cv_num.text().strip()
-        epsion = self.cv_epsion.text().strip()
-        step = self.cv_step.text().strip()
-        print(nu, mu, num, epsion, step)
-        return nu, mu, num, epsion, step
+        r = redisUtils()
+        r.mflush()
+        r.set_key_value("cvnu", self.cv_nu.text().strip())
+        r.set_key_value("cvmu", self.cv_mu.text().strip())
+        r.set_key_value("cvnum", self.cv_num.text().strip())
+        r.set_key_value("cvepison", self.cv_epsion.text().strip())
+        r.set_key_value("cvstep", self.cv_step.text().strip())
+        # nu = self.cv_nu.text().strip()
+        # mu = self.cv_mu.text().strip()
+        # num = self.cv_num.text().strip()
+        # epsion = self.cv_epsion.text().strip()
+        # step = self.cv_step.text().strip()
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

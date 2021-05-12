@@ -1,7 +1,7 @@
 import cv2
 from pylab import *
 
-# from levelsetproject.mwin import *
+from redis_drive import redisUtils
 
 class LsCV:
     # 1、read the original picture
@@ -46,13 +46,17 @@ class LsCV:
 
     def __init__(self):
         # 模型参数
-        nu = 0.0001 * 255 * 255
-        mu = 1
-        # x = Ui_MainWindow().addNum()
-        # mu = x[1]
-        num = 10
-        epison = 1
-        step = 0.1
+        # nu = 0.0001 * 255 * 255
+        # mu = 1
+        # num = 10
+        # epison = 1
+        # step = 0.1
+        r = redisUtils()
+        nu = float(r.get_value("cvnu"))
+        mu = int(r.get_value("cvmu"))
+        num = int(r.get_value("cvnum"))
+        epison = int(r.get_value("cvepison"))
+        step = float(r.get_value("cvstep"))
         LSF = self.IniLSF
         for i in range(1, num):
             LSF = self.CV(LSF, self.img, nu, mu, epison, step)
