@@ -9,11 +9,12 @@ from PyQt5 import QtGui
 from levelsetproject.mwin import Ui_MainWindow
 
 
+
 class MWim(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MWim, self).__init__()
         self.setupUi(self)
-        # self.img_path = ''
+
 
     # @pyqtSlot()
     # def on_img_tbtn_clicked(self):

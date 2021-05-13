@@ -35,7 +35,7 @@
      <enum>QTabWidget::North</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="ChanVese">
      <attribute name="title">
@@ -146,7 +146,7 @@
        </font>
       </property>
       <property name="text">
-       <string>epsion</string>
+       <string>epison</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_27">
@@ -245,7 +245,7 @@
        <string>确认修改</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="cv_epsion">
+     <widget class="QLineEdit" name="cv_epison">
       <property name="geometry">
        <rect>
         <x>390</x>
@@ -284,7 +284,7 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>0.0001*255*255</string>
+       <string>6.5025</string>
       </property>
       <property name="cursorMoveStyle">
        <enum>Qt::LogicalMoveStyle</enum>
@@ -2109,7 +2109,7 @@
      <string>选择图像</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="pathshow">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -2216,7 +2216,7 @@
   <tabstop>cv_nu</tabstop>
   <tabstop>cv_mu</tabstop>
   <tabstop>cv_num</tabstop>
-  <tabstop>cv_epsion</tabstop>
+  <tabstop>cv_epison</tabstop>
   <tabstop>cv_step</tabstop>
   <tabstop>drlsetimestep</tabstop>
   <tabstop>drlse_iter_inner</tabstop>

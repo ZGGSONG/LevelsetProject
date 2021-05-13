@@ -2,10 +2,15 @@ import cv2
 from pylab import *
 
 from redis_drive import redisUtils
+from redis_drive_db1 import redisUtils_db1
+
 
 class LsCV:
     # 1、read the original picture
-    Image = cv2.imread('img/default.bmp', 1)
+    # Image = cv2.imread('img/default.bmp', 1)
+    re = redisUtils_db1()
+    Image = cv2.imread(re.get_value("img_path"), 1)
+    print(re.get_value("img_path"))
     image = cv2.cvtColor(Image, cv2.COLOR_BGR2GRAY)
     img = np.array(image, dtype='float64')
     # plt.imshow(img, cmap='gray')
@@ -17,7 +22,7 @@ class LsCV:
     IniLSF = -IniLSF
 
     # CV函数
-    def CV(self,LSF, img, nu, mu, epison, step):
+    def CV(self, LSF, img, nu, mu, epison, step):
         Drc = (epison / math.pi) / (epison * epison + LSF * LSF)
         #    Hea = 0.5*(1+(2/math.pi)*mat_math(LSF/epison,'atan'))
         Hea = 0.5 * (1 + (2 / math.pi) * np.arctan(LSF / epison))
@@ -46,7 +51,7 @@ class LsCV:
 
     def __init__(self):
         # 模型参数
-        # nu = 0.0001 * 255 * 255
+        # nu = 0.0001 * 255 * 255       # (6.5025)
         # mu = 1
         # num = 10
         # epison = 1
