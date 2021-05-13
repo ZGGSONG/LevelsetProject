@@ -3,10 +3,6 @@
 import cv2
 from pylab import *
 
-# from main import MWim
-#
-# mw = MWim()
-# addr = mw.on_img_tbtn_clicked()
 
 # 读入原图
 Image = cv2.imread('../img/default.bmp', 1)
