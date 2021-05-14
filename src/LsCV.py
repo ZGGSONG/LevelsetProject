@@ -18,7 +18,7 @@ class LsCV:
 
         # 初始化水平集函数
         IniLSF = np.ones([img.shape[0], img.shape[1]], img.dtype)
-        IniLSF[40:80, 40:80] = -1
+        IniLSF[30:80, 30:80] = -1
         IniLSF = -IniLSF
 
         # 模型参数
@@ -36,9 +36,10 @@ class LsCV:
         LSF = IniLSF
         for i in range(1, num):
             LSF = self.CV(LSF, img, nu, mu, epison, step)
-        plt.imshow(Image), plt.xticks([]), plt.yticks([])
-        plt.contour(LSF, [0], linewidths=3.0, colors='r')
-        plt.show()
+            if i % 1 == 0:
+                plt.imshow(Image), plt.xticks([]), plt.yticks([])
+                plt.contour(LSF, [0], linewidths=3.0, colors='r')
+                plt.draw(), plt.show()
 
     # CV函数
     def CV(self, LSF, img, nu, mu, epison, step):

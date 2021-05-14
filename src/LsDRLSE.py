@@ -16,16 +16,27 @@ class LsDRLSE:
         # img = img[:,:,0]
 
         # parameter setting
-        timestep = 1
+        # timestep = 1
+        # mu = 0.2 / timestep
+        # iter_inner = 5
+        # iter_outer = 20
+        # lamda = 5
+        # alfa = -3
+        # # alfa  =1.5
+        # epsilon = 1.5
+        # sigma = 0.8
+        # # sigma = 1.5
+
+        r = redisUtils()
+        timestep = int(r.get_value("drlsetimestep"))
         mu = 0.2 / timestep
-        iter_inner = 5
-        iter_outer = 20
-        lamda = 5
-        alfa = -3
-        # alfa  =1.5
-        epsilon = 1.5
-        sigma = 0.8
-        # sigma = 1.5
+        iter_inner = int(r.get_value("drlseiter_inner"))
+        iter_outer = int(r.get_value("drlseiter_outer"))
+        lamda = int(r.get_value("drlselamda"))
+        alfa = int(r.get_value("drlsealfa"))
+        epsilon = float(r.get_value("drlseepsilon"))
+        sigma = float(r.get_value("drlsesigma"))
+
         G = gauss2D((15, 15), sigma)
         img_smooth = conv2d(img, G, 'same')
         ix, iy = np.gradient(img_smooth)

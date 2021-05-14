@@ -28,29 +28,34 @@ class LsRSF:
 
         self.Image = cv2.cvtColor(self.Image, cv2.COLOR_BGR2RGB);
         plt.figure(1);
+        self.DrawContour(IniLSF, 'r', 2);
 
-        # 第一次画图
-        # self.DrawContour(IniLSF, 'r', 2);
-
-        nu = 0.003 * 255 * 255;     #0.0003*255*255=19.5075
-        mu = 1;
-        num = 50;
-        epison = 1;
-        step = 0.1;
-        lambda1 = lambda2 = 1;
+        # nu = 0.003 * 255 * 255;     #0.003*255*255=195.075
+        # mu = 1;
+        # num = 50;
+        # epison = 1;
+        # step = 0.1;
+        # lambda1 = lambda2 = 1;
+        r = redisUtils()
+        nu = float(r.get_value("rsfnu"))
+        mu = int(r.get_value("rsfmu"))
+        num = int(r.get_value("rsfnum"))
+        epison = int(r.get_value("rsfepison"))
+        step = float(r.get_value("rsfstep"))
+        lambda1 = lambda2 = int(r.get_value("rsflambda"))
         LSF = IniLSF;
 
         for i in range(1, num):
             LSF = self.RSF(LSF, self.img, mu, nu, epison, step, lambda1, lambda2, kernel);
-
-        self.DrawContour(LSF, 'r', 2);
+            if i % 5 == 0:
+                self.DrawContour(LSF, 'r', 2);
 
     def DrawContour(self, LSF, p1, p2):
         plt.clf()
         plt.imshow(self.Image), plt.xticks([]), plt.yticks([])
         plt.contour(LSF, [0], color=p1, linewidth=p2)
         # plt.show(block=False), plt.pause(0.01)
-        plt.show()
+        plt.draw(), plt.show()
 
     def mat_math(self, intput, str):
         output = intput;

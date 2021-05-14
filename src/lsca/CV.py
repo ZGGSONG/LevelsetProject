@@ -1,6 +1,7 @@
 # coding:utf-8
 
 import cv2
+import matplotlib.pyplot as plt
 from pylab import *
 
 
@@ -68,19 +69,20 @@ def __init__():
     # 模型参数
     mu = 1
     nu = 0.003 * 255 * 255
-    num = 20
+    num = 10
     epison = 1
     step = 0.1
     LSF = IniLSF
     for i in range(1, num):
         LSF = CV(LSF, img, mu, nu, epison, step)  # 迭代
-        # if i % 1 == 0:  # 显示分割轮廓
-        #     plt.imshow(Image), plt.xticks([]), plt.yticks([])
-        #     plt.contour(LSF, [0], colors='r', linewidth=2)
-        #     plt.draw(), plt.show(block=False), plt.pause(0.01)
-    plt.imshow(Image), plt.xticks([]), plt.yticks([])
-    plt.contour(LSF, [0], colors='r', linewidth=2)
-    plt.draw(), plt.show()
+        if i % 1 == 0:  # 显示分割轮廓
+            plt.imshow(Image), plt.xticks([]), plt.yticks([])
+            plt.contour(LSF, [0], colors='r', linewidth=2)
+            plt.draw(), plt.show()
+            # plt.draw(), plt.show(block=False), plt.pause(0.01)
+    # plt.imshow(Image), plt.xticks([]), plt.yticks([])
+    # plt.contour(LSF, [0], colors='r', linewidth=2)
+    # plt.draw(), plt.show()
 
 __init__()
 
