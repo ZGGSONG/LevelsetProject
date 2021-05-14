@@ -67,3 +67,5 @@ class LsCV:
         CVterm = Drc * (-1 * (img - C1) * (img - C1) + 1 * (img - C2) * (img - C2))
         LSF = LSF + step * (Length + Area + CVterm)
         return LSF
+if __name__ == '__main__':
+    LsCV()
