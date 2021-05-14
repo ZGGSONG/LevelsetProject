@@ -3,11 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import convolve2d as conv2d
 from src.lsca.drlse import gauss2D, drlse_edge
+from src.redis_drive import redisUtils
+from src.redis_drive_db1 import redisUtils_db1
 
 class LsDRLSE:
     def __init__(self):
-        img = imageio.imread('./img/gray_r_01.bmp')
-        # img = imageio.imread(img_path)
+        # 读入原图
+        # img = imageio.imread('./img/gray_r_01.bmp')
+        re = redisUtils_db1()
+        img = imageio.imread(re.get_value("img_path"))
         # If the image is not gray scale
         # img = img[:,:,0]
 
@@ -78,5 +82,5 @@ class LsDRLSE:
         plt.show()
 
 
-# if __name__ == '__main__':
-#     LsDRLSE().__init__()
+if __name__ == '__main__':
+    LsDRLSE()

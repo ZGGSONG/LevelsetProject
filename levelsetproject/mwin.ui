@@ -45,7 +45,7 @@
       <property name="geometry">
        <rect>
         <x>330</x>
-        <y>320</y>
+        <y>340</y>
         <width>151</width>
         <height>41</height>
        </rect>
@@ -69,7 +69,7 @@
       <property name="geometry">
        <rect>
         <x>332</x>
-        <y>129</y>
+        <y>130</y>
         <width>18</width>
         <height>16</height>
        </rect>
@@ -90,7 +90,7 @@
       <property name="geometry">
        <rect>
         <x>332</x>
-        <y>157</y>
+        <y>160</y>
         <width>22</width>
         <height>16</height>
        </rect>
@@ -111,7 +111,7 @@
       <property name="geometry">
        <rect>
         <x>332</x>
-        <y>180</y>
+        <y>190</y>
         <width>31</width>
         <height>16</height>
        </rect>
@@ -132,7 +132,7 @@
       <property name="geometry">
        <rect>
         <x>332</x>
-        <y>202</y>
+        <y>222</y>
         <width>45</width>
         <height>16</height>
        </rect>
@@ -153,7 +153,7 @@
       <property name="geometry">
        <rect>
         <x>332</x>
-        <y>220</y>
+        <y>250</y>
         <width>29</width>
         <height>16</height>
        </rect>
@@ -174,7 +174,7 @@
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>220</y>
+        <y>250</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -228,7 +228,7 @@
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>260</y>
+        <y>290</y>
         <width>81</width>
         <height>32</height>
        </rect>
@@ -249,7 +249,7 @@
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>200</y>
+        <y>220</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -297,7 +297,7 @@
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>150</y>
+        <y>160</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -318,7 +318,7 @@
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>175</y>
+        <y>190</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -955,11 +955,11 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="cv_step_2">
+     <widget class="QLineEdit" name="rsf_step">
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>220</y>
+        <y>250</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -979,7 +979,7 @@
      <widget class="QLabel" name="label_47">
       <property name="geometry">
        <rect>
-        <x>342</x>
+        <x>340</x>
         <y>129</y>
         <width>18</width>
         <height>16</height>
@@ -997,11 +997,11 @@
        <string>nu</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="cv_num_2">
+     <widget class="QLineEdit" name="rsf_num">
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>175</y>
+        <y>190</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -1015,14 +1015,14 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>10</string>
+       <string>50</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_48">
       <property name="geometry">
        <rect>
-        <x>342</x>
-        <y>220</y>
+        <x>340</x>
+        <y>250</y>
         <width>29</width>
         <height>16</height>
        </rect>
@@ -1039,11 +1039,11 @@
        <string>step</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="cv_epsion_2">
+     <widget class="QLineEdit" name="rsf_epison">
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>200</y>
+        <y>220</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -1060,7 +1060,7 @@
        <string>1</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="cv_nu_2">
+     <widget class="QLineEdit" name="rsf_nu">
       <property name="geometry">
        <rect>
         <x>400</x>
@@ -1078,7 +1078,7 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>0.0001*255*255</string>
+       <string>19.5075</string>
       </property>
       <property name="cursorMoveStyle">
        <enum>Qt::LogicalMoveStyle</enum>
@@ -1087,11 +1087,11 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="cv_mu_2">
+     <widget class="QLineEdit" name="rsf_mu">
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>150</y>
+        <y>160</y>
         <width>91</width>
         <height>18</height>
        </rect>
@@ -1111,8 +1111,8 @@
      <widget class="QLabel" name="label_49">
       <property name="geometry">
        <rect>
-        <x>342</x>
-        <y>202</y>
+        <x>340</x>
+        <y>222</y>
         <width>45</width>
         <height>16</height>
        </rect>
@@ -1132,8 +1132,8 @@
      <widget class="QLabel" name="label_50">
       <property name="geometry">
        <rect>
-        <x>342</x>
-        <y>157</y>
+        <x>340</x>
+        <y>160</y>
         <width>22</width>
         <height>16</height>
        </rect>
@@ -1153,8 +1153,8 @@
      <widget class="QLabel" name="label_51">
       <property name="geometry">
        <rect>
-        <x>342</x>
-        <y>180</y>
+        <x>340</x>
+        <y>190</y>
         <width>31</width>
         <height>16</height>
        </rect>
@@ -1171,11 +1171,11 @@
        <string>num</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="cv_confirm_2">
+     <widget class="QPushButton" name="rsf_confirm">
       <property name="geometry">
        <rect>
         <x>410</x>
-        <y>260</y>
+        <y>320</y>
         <width>81</width>
         <height>32</height>
        </rect>
@@ -1196,7 +1196,7 @@
       <property name="geometry">
        <rect>
         <x>360</x>
-        <y>320</y>
+        <y>360</y>
         <width>151</width>
         <height>41</height>
        </rect>
@@ -1276,6 +1276,48 @@
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLineEdit" name="rsf_lambda">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>280</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Apple Symbols</family>
+        <pointsize>14</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>280</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Apple Braille</family>
+        <pointsize>14</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>lambda</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="DRLSE">
      <attribute name="title">
@@ -1314,7 +1356,7 @@
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="drlsetimestep">
+     <widget class="QLineEdit" name="drlse_timestep">
       <property name="geometry">
        <rect>
         <x>378</x>
@@ -1638,7 +1680,7 @@
        <string>sigma</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="drlsesigma">
+     <widget class="QLineEdit" name="drlse_sigma">
       <property name="geometry">
        <rect>
         <x>380</x>
@@ -1665,7 +1707,7 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="drlselamda">
+     <widget class="QLineEdit" name="drlse_lamda">
       <property name="geometry">
        <rect>
         <x>380</x>
@@ -2218,19 +2260,27 @@
   <tabstop>cv_num</tabstop>
   <tabstop>cv_epison</tabstop>
   <tabstop>cv_step</tabstop>
-  <tabstop>drlsetimestep</tabstop>
+  <tabstop>rsf_nu</tabstop>
+  <tabstop>rsf_mu</tabstop>
+  <tabstop>rsf_num</tabstop>
+  <tabstop>rsf_epison</tabstop>
+  <tabstop>rsf_step</tabstop>
+  <tabstop>rsf_lambda</tabstop>
+  <tabstop>drlse_timestep</tabstop>
   <tabstop>drlse_iter_inner</tabstop>
   <tabstop>drlse_iter_outer</tabstop>
-  <tabstop>drlselamda</tabstop>
+  <tabstop>drlse_lamda</tabstop>
   <tabstop>drlse_alfa</tabstop>
   <tabstop>drlse_epsilon</tabstop>
-  <tabstop>drlsesigma</tabstop>
+  <tabstop>drlse_sigma</tabstop>
   <tabstop>cv_confirm</tabstop>
-  <tabstop>tabWidget</tabstop>
-  <tabstop>drlse_confirm</tabstop>
-  <tabstop>openImg</tabstop>
-  <tabstop>btn_cv</tabstop>
   <tabstop>btn_drlse</tabstop>
+  <tabstop>drlse_confirm</tabstop>
+  <tabstop>btn_rsf</tabstop>
+  <tabstop>btn_cv</tabstop>
+  <tabstop>rsf_confirm</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>openImg</tabstop>
  </tabstops>
  <resources>
   <include location="res.qrc"/>
@@ -2329,6 +2379,38 @@
     <hint type="destinationlabel">
      <x>190</x>
      <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_rsf</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>688</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>431</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rsf_confirm</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>703</x>
+     <y>435</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>431</x>
+     <y>316</y>
     </hint>
    </hints>
   </connection>
