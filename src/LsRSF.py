@@ -38,11 +38,11 @@ class LsRSF:
         # lambda1 = lambda2 = 1;
         r = redisUtils()
         nu = float(r.get_value("rsfnu"))
-        mu = int(r.get_value("rsfmu"))
+        mu = float(r.get_value("rsfmu"))
         num = int(r.get_value("rsfnum"))
-        epison = int(r.get_value("rsfepison"))
+        epison = float(r.get_value("rsfepison"))
         step = float(r.get_value("rsfstep"))
-        lambda1 = lambda2 = int(r.get_value("rsflambda"))
+        lambda1 = lambda2 = float(r.get_value("rsflambda"))
         LSF = IniLSF;
 
         for i in range(1, num):

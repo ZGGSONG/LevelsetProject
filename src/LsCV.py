@@ -29,9 +29,9 @@ class LsCV:
         # step = 0.1
         r = redisUtils()
         nu = float(r.get_value("cvnu"))
-        mu = int(r.get_value("cvmu"))
+        mu = float(r.get_value("cvmu"))
         num = int(r.get_value("cvnum"))
-        epison = int(r.get_value("cvepison"))
+        epison = float(r.get_value("cvepison"))
         step = float(r.get_value("cvstep"))
         LSF = IniLSF
         for i in range(1, num):

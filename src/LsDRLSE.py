@@ -28,12 +28,12 @@ class LsDRLSE:
         # # sigma = 1.5
 
         r = redisUtils()
-        timestep = int(r.get_value("drlsetimestep"))
+        timestep = float(r.get_value("drlsetimestep"))
         mu = 0.2 / timestep
-        iter_inner = int(r.get_value("drlseiter_inner"))
-        iter_outer = int(r.get_value("drlseiter_outer"))
-        lamda = int(r.get_value("drlselamda"))
-        alfa = int(r.get_value("drlsealfa"))
+        iter_inner = float(r.get_value("drlseiter_inner"))
+        iter_outer = float(r.get_value("drlseiter_outer"))
+        lamda = float(r.get_value("drlselamda"))
+        alfa = float(r.get_value("drlsealfa"))
         epsilon = float(r.get_value("drlseepsilon"))
         sigma = float(r.get_value("drlsesigma"))
 
