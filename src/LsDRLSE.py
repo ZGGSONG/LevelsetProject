@@ -44,7 +44,7 @@ class LsDRLSE:
         g = 1.0 / (1 + f)
 
         # initialize LSF as binary step function
-        c0 = 2;
+        c0 = 2
         initialLSF = c0 * np.ones(img.shape)
         # generate the initial region R0 as two rectangles
         initialLSF[24:35, 19:25] = -c0

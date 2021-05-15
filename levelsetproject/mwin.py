@@ -626,6 +626,8 @@ class Ui_MainWindow(object):
         # getOpenFileName() 得到的是一个元组
         file_path = QFileDialog.getOpenFileName(self, "浏览", "./relevantinfo/cv/", "*.caj;*.pdf;;All Files(*)")
         # print(file_path[0])
+
+        # mac: open、windows: explorer.exe、linux: xdg-open
         os.system('open %s' % file_path[0])
 
     def rsfFiles(self):
