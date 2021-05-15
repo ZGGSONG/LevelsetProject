@@ -284,7 +284,7 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>195.075</string>
+       <string>0.003</string>
       </property>
       <property name="cursorMoveStyle">
        <enum>Qt::LogicalMoveStyle</enum>
@@ -509,7 +509,7 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>195.075</string>
+       <string>0.003</string>
       </property>
       <property name="cursorMoveStyle">
        <enum>Qt::LogicalMoveStyle</enum>

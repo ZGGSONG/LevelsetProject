@@ -37,7 +37,7 @@ class LsRSF:
         # step = 0.1;
         # lambda1 = lambda2 = 1;
         r = redisUtils()
-        nu = float(r.get_value("rsfnu"))
+        nu = float(r.get_value("rsfnu")) * 255 * 255
         mu = float(r.get_value("rsfmu"))
         num = int(r.get_value("rsfnum"))
         epison = float(r.get_value("rsfepison"))

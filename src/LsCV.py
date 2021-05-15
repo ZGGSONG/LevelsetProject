@@ -22,13 +22,13 @@ class LsCV:
         IniLSF = -IniLSF
 
         # 模型参数
-        # nu = 0.0001 * 255 * 255       # (6.5025)
+        # nu = 0.003 * 255 * 255
         # mu = 1
         # num = 10
         # epison = 1
         # step = 0.1
         r = redisUtils()
-        nu = float(r.get_value("cvnu"))
+        nu = float(r.get_value("cvnu")) * 255 * 255
         mu = float(r.get_value("cvmu"))
         num = int(r.get_value("cvnum"))
         epison = float(r.get_value("cvepison"))
