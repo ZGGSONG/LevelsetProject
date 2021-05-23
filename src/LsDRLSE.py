@@ -32,7 +32,7 @@ class LsDRLSE:
         mu = 0.2 / timestep
         iter_inner = int(r.get_value("drlseiter_inner"))
         iter_outer = int(r.get_value("drlseiter_outer"))
-        lamda = float(r.get_value("drlselamda"))
+        lamda = float(r.get_value("drlselambda"))
         alfa = float(r.get_value("drlsealfa"))
         epsilon = float(r.get_value("drlseepsilon"))
         sigma = float(r.get_value("drlsesigma"))
