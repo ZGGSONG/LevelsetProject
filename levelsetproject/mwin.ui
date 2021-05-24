@@ -773,7 +773,7 @@
        </font>
       </property>
       <property name="text">
-       <string>lamda</string>
+       <string>lambda</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="drlse_alfa">
@@ -995,7 +995,7 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="drlse_lamda">
+     <widget class="QLineEdit" name="drlse_lambda">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -1330,7 +1330,7 @@
   <tabstop>drlse_timestep</tabstop>
   <tabstop>drlse_iter_inner</tabstop>
   <tabstop>drlse_iter_outer</tabstop>
-  <tabstop>drlse_lamda</tabstop>
+  <tabstop>drlse_lambda</tabstop>
   <tabstop>drlse_alfa</tabstop>
   <tabstop>drlse_epsilon</tabstop>
   <tabstop>drlse_sigma</tabstop>
