@@ -29,10 +29,15 @@ class LsCV:
         # epison = 1
         # step = 0.1
         r = redisUtils()
+        # 长度约束系数
         nu = float(r.get_value("cvnu")) * 255 * 255
+        # 惩罚项系数
         mu = float(r.get_value("cvmu"))
+        # 迭代次数
         num = int(r.get_value("cvnum"))
+        # 规则化参数
         epison = float(r.get_value("cvepison"))
+        # 演变步长
         step = float(r.get_value("cvstep"))
         LSF = IniLSF
         for i in range(1, num):

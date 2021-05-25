@@ -28,13 +28,18 @@ class LsDRLSE:
         # # sigma = 1.5
 
         r = redisUtils()
+        # 演化步长
         timestep = float(r.get_value("drlsetimestep"))
+        # 惩罚项系数
         mu = 0.2 / timestep
         iter_inner = int(r.get_value("drlseiter_inner"))
         iter_outer = int(r.get_value("drlseiter_outer"))
+        # 全局项系数
         lamda = float(r.get_value("drlselambda"))
         alfa = float(r.get_value("drlsealfa"))
+        # 规则化参数
         epsilon = float(r.get_value("drlseepsilon"))
+        # 高斯核函数标准差
         sigma = float(r.get_value("drlsesigma"))
 
         G = gauss2D((15, 15), sigma)

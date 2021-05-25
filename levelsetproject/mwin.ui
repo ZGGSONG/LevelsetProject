@@ -218,10 +218,13 @@
        <number>0</number>
       </property>
       <property name="text">
-       <string>相关参数调整</string>
+       <string>&lt;a href='https://blog.csdn.net/yangdashi888/article/details/83820017?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162192474416780265440284%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=162192474416780265440284&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-4-83820017.first_rank_v2_pc_rank_v29&amp;utm_term=CV%E6%B0%B4%E5%B9%B3%E9%9B%86%E6%AF%8F%E4%B8%AA%E7%B3%BB%E6%95%B0%E7%9A%84%E5%90%AB%E4%B9%89&amp;spm=1018.2226.3001.4187'&gt;相关参数调整&lt;/a&gt;</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="cv_confirm">
@@ -380,10 +383,13 @@
        <number>0</number>
       </property>
       <property name="text">
-       <string>相关参数调整</string>
+       <string>&lt;a href='https://blog.csdn.net/yangdashi888/article/details/83820017?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162192474416780265440284%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=162192474416780265440284&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-4-83820017.first_rank_v2_pc_rank_v29&amp;utm_term=CV%E6%B0%B4%E5%B9%B3%E9%9B%86%E6%AF%8F%E4%B8%AA%E7%B3%BB%E6%95%B0%E7%9A%84%E5%90%AB%E4%B9%89&amp;spm=1018.2226.3001.4187'&gt;相关参数调整&lt;/a&gt;</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLineEdit" name="rsf_step">
@@ -1097,10 +1103,13 @@
        <number>0</number>
       </property>
       <property name="text">
-       <string>相关参数调整</string>
+       <string>&lt;a href='https://blog.csdn.net/yangdashi888/article/details/83820017?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162192474416780265440284%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=162192474416780265440284&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-4-83820017.first_rank_v2_pc_rank_v29&amp;utm_term=CV%E6%B0%B4%E5%B9%B3%E9%9B%86%E6%AF%8F%E4%B8%AA%E7%B3%BB%E6%95%B0%E7%9A%84%E5%90%AB%E4%B9%89&amp;spm=1018.2226.3001.4187'&gt;相关参数调整&lt;/a&gt;</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="drlse_confirm">

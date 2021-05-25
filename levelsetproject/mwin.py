@@ -17,7 +17,6 @@ from src.redis_drive import redisUtils
 from src.redis_drive_db1 import redisUtils_db1
 import os
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -112,6 +111,7 @@ class Ui_MainWindow(object):
         self.label_23.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.label_23.setMidLineWidth(0)
         self.label_23.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_23.setOpenExternalLinks(True)
         self.label_23.setObjectName("label_23")
         self.cv_confirm = QtWidgets.QPushButton(self.ChanVese)
         self.cv_confirm.setGeometry(QtCore.QRect(140, 290, 81, 32))
@@ -178,6 +178,7 @@ class Ui_MainWindow(object):
         self.label_42.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.label_42.setMidLineWidth(0)
         self.label_42.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_42.setOpenExternalLinks(True)
         self.label_42.setObjectName("label_42")
         self.rsf_step = QtWidgets.QLineEdit(self.RSF)
         self.rsf_step.setGeometry(QtCore.QRect(130, 240, 91, 18))
@@ -477,6 +478,7 @@ class Ui_MainWindow(object):
         self.label_34.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.label_34.setMidLineWidth(0)
         self.label_34.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_34.setOpenExternalLinks(True)
         self.label_34.setObjectName("label_34")
         self.drlse_confirm = QtWidgets.QPushButton(self.DRLSE)
         self.drlse_confirm.setGeometry(QtCore.QRect(150, 340, 81, 32))
@@ -687,7 +689,7 @@ class Ui_MainWindow(object):
         self.label_26.setText(_translate("MainWindow", "epison"))
         self.label_27.setText(_translate("MainWindow", "step"))
         self.cv_step.setPlaceholderText(_translate("MainWindow", "0.1"))
-        self.label_23.setText(_translate("MainWindow", "相关参数调整"))
+        self.label_23.setText(_translate("MainWindow", "<a href=\'https://blog.csdn.net/yangdashi888/article/details/83820017?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162192474416780265440284%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=162192474416780265440284&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-4-83820017.first_rank_v2_pc_rank_v29&utm_term=CV%E6%B0%B4%E5%B9%B3%E9%9B%86%E6%AF%8F%E4%B8%AA%E7%B3%BB%E6%95%B0%E7%9A%84%E5%90%AB%E4%B9%89&spm=1018.2226.3001.4187\'>相关参数调整</a>"))
         self.cv_confirm.setText(_translate("MainWindow", "确认修改"))
         self.cv_epison.setPlaceholderText(_translate("MainWindow", "1"))
         self.cv_nu.setPlaceholderText(_translate("MainWindow", "0.003"))
@@ -695,7 +697,7 @@ class Ui_MainWindow(object):
         self.cv_num.setPlaceholderText(_translate("MainWindow", "10"))
         self.btn_cv_files.setText(_translate("MainWindow", "点击查看资料"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.ChanVese), _translate("MainWindow", "CV模型"))
-        self.label_42.setText(_translate("MainWindow", "相关参数调整"))
+        self.label_42.setText(_translate("MainWindow", "<a href=\'https://blog.csdn.net/yangdashi888/article/details/83820017?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162192474416780265440284%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=162192474416780265440284&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-4-83820017.first_rank_v2_pc_rank_v29&utm_term=CV%E6%B0%B4%E5%B9%B3%E9%9B%86%E6%AF%8F%E4%B8%AA%E7%B3%BB%E6%95%B0%E7%9A%84%E5%90%AB%E4%B9%89&spm=1018.2226.3001.4187\'>相关参数调整</a>"))
         self.rsf_step.setPlaceholderText(_translate("MainWindow", "0.1"))
         self.label_47.setText(_translate("MainWindow", "nu"))
         self.rsf_num.setPlaceholderText(_translate("MainWindow", "50"))
@@ -727,7 +729,7 @@ class Ui_MainWindow(object):
         self.drlse_lambda.setPlaceholderText(_translate("MainWindow", "5"))
         self.label_35.setText(_translate("MainWindow", "timestep"))
         self.btn_drlse.setText(_translate("MainWindow", "点击运行"))
-        self.label_34.setText(_translate("MainWindow", "相关参数调整"))
+        self.label_34.setText(_translate("MainWindow", "<a href=\'https://blog.csdn.net/yangdashi888/article/details/83820017?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162192474416780265440284%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=162192474416780265440284&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-4-83820017.first_rank_v2_pc_rank_v29&utm_term=CV%E6%B0%B4%E5%B9%B3%E9%9B%86%E6%AF%8F%E4%B8%AA%E7%B3%BB%E6%95%B0%E7%9A%84%E5%90%AB%E4%B9%89&spm=1018.2226.3001.4187\'>相关参数调整</a>"))
         self.drlse_confirm.setText(_translate("MainWindow", "确认修改"))
         self.btn_drlse_files.setText(_translate("MainWindow", "点击查看资料"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.DRLSE), _translate("MainWindow", "正则模型"))

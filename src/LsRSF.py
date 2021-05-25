@@ -37,11 +37,17 @@ class LsRSF:
         # step = 0.1;
         # lambda1 = lambda2 = 1;
         r = redisUtils()
+        # 长度约束系数
         nu = float(r.get_value("rsfnu")) * 255 * 255
+        # 惩罚项系数
         mu = float(r.get_value("rsfmu"))
+        # 迭代次数
         num = int(r.get_value("rsfnum"))
+        # 规则化参数
         epison = float(r.get_value("rsfepison"))
+        # 演化步长
         step = float(r.get_value("rsfstep"))
+        # 全局项系数
         lambda1 = lambda2 = float(r.get_value("rsflambda"))
         LSF = IniLSF;
 
