@@ -17,6 +17,7 @@ from src.redis_drive import redisUtils
 from src.redis_drive_db1 import redisUtils_db1
 import os
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -561,7 +562,7 @@ class Ui_MainWindow(object):
         self.menuBar.addAction(self.menuhelp.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         self.actionClose.triggered.connect(MainWindow.close)
         self.btn_cv.clicked.connect(self.startCv)
         self.cv_confirm.clicked.connect(self.addNumCv)

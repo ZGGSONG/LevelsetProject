@@ -4,6 +4,7 @@ from pylab import *
 from src.redis_drive import redisUtils
 from src.redis_drive_db1 import redisUtils_db1
 
+
 class LsCV:
 
     def __init__(self):
@@ -68,5 +69,7 @@ class LsCV:
         CVterm = Drc * (-1 * (img - C1) * (img - C1) + 1 * (img - C2) * (img - C2))
         LSF = LSF + step * (Length + Area + CVterm)
         return LSF
+
+
 if __name__ == '__main__':
     LsCV()
