@@ -2,7 +2,29 @@
 
 LevelSet SoftWare
 
-> 参考文献：CV、LBF、DRLSE模型、Redis、PSNR（峰值信噪比）、SSIM（结构相似性）
+## How To Use It?
+
+1. 安装环境
+```shell
+brew install python redis
+```
+2. 安装依赖
+```shell
+pip install -r requirements.txt
+```
+3. 配置redis
+
+    在`src`-`redis_drive.py`和`redis_drive_db1.py`分别配置你自己的redis信息以连接数据库
+
+4. 运行`main.py`即可
+
+
+<details>
+<summary></summary>
+
+## 开发过程
+
+> 参考文献：CV、LBF、DRLSE模型、Redis、PSNR、SSIM
 
 - [x] **基本需求**
     - [x] 选择图像
@@ -16,3 +38,5 @@ LevelSet SoftWare
     - [ ] 分割效果评价指标
         - PSNR(峰值信噪比)
         - SSIM(结构相似性)
+
+</details>

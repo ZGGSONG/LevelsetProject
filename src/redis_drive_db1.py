@@ -12,7 +12,7 @@ class redisUtils_db1:
         :param port:
         '''
         try:
-            # self.r = redis.StrictRedis(host='47.98.103.241', port=6060, password="jiaobaba", db=0, decode_responses=True)
+            # self.r = redis.StrictRedis(host='*******', port=****, password="*******", db=0, decode_responses=True)
             self.r = redis.StrictRedis(host='127.0.0.1', port=6379, db=1, password="swj.", decode_responses=True)
         except Exception as e:
             print("redis连接失败,错误信息为%s" % e)
