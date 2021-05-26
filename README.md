@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 
 <details>
-<summary>s</summary>
+<summary></summary>
 
 ## 开发过程
 
