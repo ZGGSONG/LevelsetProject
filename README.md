@@ -20,11 +20,24 @@ pip install -r requirements.txt
 
 
 <details>
-<summary></summary>
+<summary>MORE</summary>
 
 ## 开发过程
 
 > 参考文献：CV、LBF、DRLSE模型、Redis、PSNR、SSIM
+
+- 目录结构
+
+.
+├── levelsetproject
+└── src
+    ├── main.py
+    ├── img
+    ├── lsca
+    └── relevantinfo
+        ├── cv
+        ├── drlse
+        └── rsf
 
 - [x] **基本需求**
     - [x] 选择图像
